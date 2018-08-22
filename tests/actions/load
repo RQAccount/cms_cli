@@ -1,0 +1,18 @@
+
+import * as actions from '../../src/actions/load';
+
+describe('load actions', () => {
+    test('should create an action to add httpLength', () => {
+        const expectedAction = {
+            type: actions.ADDHTTPLOAD,
+        }
+        expect(actions.addHttpLoadLength()).toEqual(expectedAction);
+    })
+
+    test('should create an action to del httpLength', () => {
+        const expectedAction = {
+            type: actions.DELHTTPLOAD,
+        }
+        expect(actions.delHttpLoadLength()).toEqual(expectedAction);
+    })
+})
